@@ -12,7 +12,7 @@
 
 	<mvc:annotation-driven />
 
-   <mvc:resources mapping="/webjars/**" location="/webjars/"/>
+    <mvc:resources mapping="/webjars/**" location="/webjars/"/>
    
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">

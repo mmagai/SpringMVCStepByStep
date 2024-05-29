@@ -42,6 +42,7 @@
         </dependency>
         <!-- End: Add dependancy for JSTL tags  -->
         
+        <!-- Start: Add dependancy for BootStrap & JQuery   -->
          <dependency>
             <groupId>org.webjars</groupId>
             <artifactId>bootstrap</artifactId>
@@ -52,7 +53,8 @@
             <artifactId>jquery</artifactId>
             <version>1.9.1</version>
         </dependency>
-        
+          <!-- End: Add dependancy for BootStrap & JQuery   -->
+          
     </dependencies>
 
     <build>
