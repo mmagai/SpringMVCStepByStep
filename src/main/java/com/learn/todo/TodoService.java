@@ -61,13 +61,14 @@ public class TodoService {
 
 	public Todo retrieve(int id) {
 
-		for (Todo todo : todos) {
-
-			if (todo.getId() == id) {
-
+		for(Todo todo:todos) {
+			
+			if(todo.getId() == id) {
+				
 				return todo;
 			}
-
+			
+		
 		}
 		return null;
 	}

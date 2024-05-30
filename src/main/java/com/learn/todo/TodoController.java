@@ -29,18 +29,18 @@ public class TodoController {
 	}
 
 	@RequestMapping(value="/add-todos", method= RequestMethod.GET)
-	public String showAddTodoPage() {
+	public String showAddTodoPage(ModelMap model) {
 
 		
-		
+		model.addAttribute("todo", new Todo());
 		return "add-todos";
 	}
 	
 	@RequestMapping(value="/add-todos", method= RequestMethod.POST)
-	public String addTodoPage(@RequestParam String desc, ModelMap model) {
+	public String addTodoPage(Todo todo, ModelMap model) {
 
 		
-		todoService.addTodo("Mahesh", desc, new Date(), false);
+		todoService.addTodo("Mahesh", todo.getDesc(), new Date(), false);
 		model.clear();
 		return "redirect:list-todos";
 	}
